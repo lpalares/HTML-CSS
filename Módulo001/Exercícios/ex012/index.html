@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo Vídeos Hospedados Localmente</h1>
+    <p>Esse vídeo está hospedado no meu próprio servidor.</p>
+    <h2>Forma 1</h2>
+    <video src="midia/meu-video.mp4" width="560" poster="img/limoes-capa.png" preload="metadata" controls autoplay loop></video>
+    <h2>Forma 2 (Recomendado)</h2>
+    <video width="560" poster="img/limoes-capa.png" preload="metadata" controls autoplay loop>
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.m4v" type="video/mp4">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+        <!-- Coloque os vídeos mais curtos em cima e os mais pesados embaixo -->
+         <!-- Se o seu site tiver muito acesso e download dos vídeos, hospedar vídeo pelo próprio servidor consumirá muita banda. Será caro.-->
+    </video>
+    <h1>Inserindo Vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=rXhnrmKAf0z3HgoO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/197093965?color=ff9933&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <h1>Site Usado Para Converter os Vídeos</h1>
+    <h2>HandBrake</h2>
+    <a href="https://handbrake.fr/" target="_blank" rel="nofollow">HandBrake | Download</a>
+    <p>Abaixo está o vídeo onde o Gustavo Guanabara ensina a instalar e utilizar o HandBrake:</p>
+    <a href="https://www.youtube.com/watch?v=DjOSM72cYac&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=34" target="_blank" rel="external">Link do Vídeo</a>
+</body>
+</html>

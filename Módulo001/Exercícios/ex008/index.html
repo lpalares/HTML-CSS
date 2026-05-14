@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formatação de Texto</title>
+    <style>
+        mark {
+            background-color: rgb(0, 238, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nessa frase temos um termo em <b>negrito</b> usando a tag &lt;b&gt; (não semântica).</p>
+    <p>Nessa frase temos um termo em <strong>destaque</strong> usando a tag &lt;strong&gt; (com semântica).</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nessa frase temos um termo em <i>itálico</i> usando a tag &lt;i&gt; (não semântica).</p>
+    <p>Nessa frase temos um termo em <em>ênfase</em> usando a tag &lt;em&gt; (com semântica).</p>
+    <h2>Recomendação do Gustavo Guanabara</h2>
+    <p>Use as tags &lt;strong&gt; e &lt;em&gt; em vez de &lt;b&gt; e &lt;i&gt;.</p>
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar também um <mark>texto marcado</mark> usando a tag &lt;mark&gt;.</p>
+    <p>E no outro parágrafo temos outro <mark>texto marcado</mark> no final.</p>
+    <h2>Texto Grande e Pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo. Leia o comentário no código apertando a tecla f12 no Google Chrome.</p>
+    <!-- Por que a tag <big> é obsoleta e a tag <small> não? Como aprendido anteriormente, o html não é mais para forma e sim para semântica; ou seja, atualmente o html serve para o significado e a forma (aparência) deve ser feita com o CSS. A tag <big> é forma, então não serve para html, mas a tag <small> tem um significado apesar de também servir para forma. A tag <small> pode indicar as letras pequenas de um contrato, por exemplo.-->
+        <h2>Texto Deletado</h2>
+        <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado. Para fazer isso, utilize a tag &lt;del&gt;.</p>
+        <h2>Texto Inserido</h2>
+        <p>Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois. Para fazer isso, utilize a tag &lt;ins&gt;</p>
+        <p>Existe também o <u>sublinhado</u> com tag &lt;u&gt; que é não semântica.</p>
+        <h2>Texto Sobrescrito</h2>
+        <p>Para inserir coisas do tipo x<sup>2</sup>+3. A tag utilizada é &lt;sup&gt;</p>
+        <h2>Texto Subscrito</h2>
+        <p>Para inserir coisas do tipo H<sub>2</sub>O. A tag utilizada é &lt;sub&gt;</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e dimuna o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="../img/pequeno.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="../img/médio.png" type="image/png">
+        <img src="../img/grande.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Iremos aprender a reproduzir áudios em HTML5.</p>
+    <h2>Forma 1</h2>
+    <audio src="midia/exercicios_modulo-01_ex011_midia_happy-mistake.mp3" controls autoplay>Happy Mistake</audio>
+    <!-- MP3, WAV, OGG-->
+     <h2>Forma 2 (Recomendado)</h2>
+     <audio preload="metadata" controls> <!-- controls faz aparecer os controles do áudio, autoplay faz o áudio/vídeo iniciar sozinho (pode não funcionar no navegador) e loop faz o áudio voltar a tocar quando acabar.-->
+        <!-- Existem 3 opções de preload: Auto, Metadata e None. É recomendado usar o Metadata. Ao colocar auto, seu site só vai terminar de carregar quando o áudio terminar de carregar, none não carrega e Metadata baixa algumas informações apenas.-->
+        <source src="midia/exercicios_modulo-01_ex011_midia_happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/exercicios_modulo-01_ex011_midia_happy-mistake.ogg" type="audio/ogg">
+        <source src="midia/exercicios_modulo-01_ex011_midia_happy-mistake.wav" type="audio/wav">
+        <!-- É recomendado dar menos prioridade para o arquivo.wav por ser mais pesado. -->
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio. <a href="midia/exercicios_modulo-01_ex011_midia_happy-mistake.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+     </audio>
+</body>
+</html>
